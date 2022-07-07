@@ -63,22 +63,26 @@
           // No need to change anything ABOVE this line ^
 
           return(
+            <
             <h1>Draw a Card</h1>
-            <button onClick={}>
+            <button onClick={[]}>
               Click to Draw a Card
             </button>
+            <h2>Return a Card</h2>
             <button onClick={shuffle}>
-              Return Cards and Shuffle Deck
-            </button>
-            <div style={handStyles}>
+              Return Cards and this Shuffle Deck
+            </button> 
+            />
+            
+            <div style={handStyles}> </div>
               {this.state.hand.map((card, index) => {
                 return (
                   <div style={cardStyles} key={index}>
-                    {card}
-                  </div>
+                    {card} </div>
+                 
                 )
               })}
-            </div>
+            
           )
         }
       }
@@ -89,3 +93,5 @@
     </script>
   </body>
 </html>
+
+<!-- Note to Instructors: Lines 66-74 are a bit problematic for me, after doing some research thru the console log and web I know I need to close it correctly but I've exhausted all my options. Not understanding the syntax formatting too well, even with cheat sheets. -->
